@@ -1,0 +1,15 @@
+Cookie security report: https://github.com
+Score: 84/100  Grade: B
+
+  Final URL: https://github.com
+  Status: 200
+  Redirects: 0
+  Cookies: 3 (_gh_sess, _octo, logged_in)
+
+Findings (3):
+  [MEDIUM] _octo (HttpOnly): Cookie is readable by JavaScript, so a cross-site scripting (XSS) flaw can steal it.
+        Fix: Set the HttpOnly flag unless JavaScript genuinely needs to read this cookie.
+  [LOW] _octo (Domain): Cookie is shared with every subdomain of '.github.com', which widens the blast radius if any subdomain is compromised.
+        Fix: Drop the leading dot and the Domain attribute unless subdomains genuinely need the cookie.
+  [LOW] logged_in (Domain): Cookie is shared with every subdomain of '.github.com', which widens the blast radius if any subdomain is compromised.
+        Fix: Drop the leading dot and the Domain attribute unless subdomains genuinely need the cookie.
