@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Cookie Security Checker logo</title>
+  <desc id="desc">A teal shield on a deep navy rounded square, protecting a cookie with a padlock.</desc>
+  <rect width="512" height="512" rx="96" fill="#0B1F3A"/>
+  <path d="M256,52 L396,116 V238 C396,330 330,404 256,440 C182,404 116,330 116,238 V116 Z"
+        fill="#123252" stroke="#2DD4BF" stroke-width="14" stroke-linejoin="round"/>
+  <circle cx="256" cy="246" r="82" fill="#2DD4BF"/>
+  <g fill="#0B1F3A" opacity="0.55">
+    <circle cx="216" cy="212" r="9"/>
+    <circle cx="292" cy="204" r="7"/>
+    <circle cx="302" cy="282" r="10"/>
+    <circle cx="212" cy="282" r="6"/>
+  </g>
+  <rect x="224" y="246" width="64" height="52" rx="8" fill="#0B1F3A"/>
+  <path d="M234,246 v-15 a22,22 0 0 1 44,0 v15" fill="none" stroke="#0B1F3A" stroke-width="8"/>
+  <circle cx="256" cy="266" r="8" fill="#2DD4BF"/>
+  <rect x="252" y="270" width="8" height="14" rx="4" fill="#2DD4BF"/>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">Cookie Security Checker demo output</title>
+  <desc id="desc">Static preview of a real terminal run auditing github.com: score 84 out of 100, grade B, three findings.</desc>
+  <rect width="1000" height="560" rx="16" fill="#0B1F3A"/>
+  <rect width="1000" height="48" rx="16" fill="#123252"/>
+  <rect y="32" width="1000" height="16" fill="#123252"/>
+  <circle cx="34" cy="24" r="8" fill="#F87171"/>
+  <circle cx="60" cy="24" r="8" fill="#FBBF24"/>
+  <circle cx="86" cy="24" r="8" fill="#34D399"/>
+  <text x="500" y="31" font-family="monospace" font-size="16" fill="#94A3B8" text-anchor="middle">cookie-security-checker</text>
+  <g font-family="monospace" font-size="19">
+    <text x="32" y="92" fill="#2DD4BF">$ python3 cookie_security_checker.py https://github.com</text>
+    <text x="32" y="128" fill="#F8FAFC">Cookie security report: https://github.com</text>
+    <text x="32" y="164" fill="#F8FAFC">Score: 84/100  Grade: B</text>
+    <text x="32" y="206" fill="#94A3B8">  Final URL: https://github.com</text>
+    <text x="32" y="238" fill="#94A3B8">  Status: 200</text>
+    <text x="32" y="270" fill="#94A3B8">  Redirects: 0</text>
+    <text x="32" y="302" fill="#94A3B8">  Cookies: 3 (_gh_sess, _octo, logged_in)</text>
+    <text x="32" y="344" fill="#F8FAFC">Findings (3):</text>
+    <text x="32" y="380" fill="#FBBF24">  [MEDIUM] _octo (HttpOnly): Cookie is readable by JavaScript, so a</text>
+    <text x="32" y="412" fill="#FBBF24">  cross-site scripting (XSS) flaw can steal it.</text>
+    <text x="32" y="448" fill="#94A3B8">  [LOW] _octo (Domain): Cookie is shared with every subdomain of</text>
+    <text x="32" y="480" fill="#94A3B8">  '.github.com', which widens the blast radius if any subdomain is</text>
+    <text x="32" y="512" fill="#94A3B8">  compromised.</text>
+  </g>
+</svg>
