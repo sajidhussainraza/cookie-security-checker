@@ -1,0 +1,31 @@
+name: Feature request
+description: Suggest a new check, flag, or improvement
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea. Please describe the problem it solves first — a feature that fixes a real auditing gap is far more likely to be accepted.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe the auditing gap or workflow pain, not just the feature.
+      placeholder: I cannot tell the checker to skip analytics cookies, so every run fails my CI gate on findings I have already accepted.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: How should it work? Include example commands or output if you can.
+      placeholder: A --ignore-cookie option that takes a cookie name to exclude from the report.
+    validations:
+      required: false
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any other way to solve the same problem?
+    validations:
+      required: false

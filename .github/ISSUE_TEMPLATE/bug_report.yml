@@ -1,0 +1,54 @@
+name: Bug report
+description: Report something that does not work as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Please fill in the details below so it can be reproduced.
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug.
+      placeholder: The checker reports a grade of A for a site whose session cookie has no Secure flag.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The exact command you ran and what you observed.
+      placeholder: |
+        1. Run `python3 cookie_security_checker.py https://example.com`
+        2. See output ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should have happened instead?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Python version
+      description: Output of `python3 --version`.
+      placeholder: Python 3.12.1
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: Ubuntu 24.04 / Windows 11 / macOS 15
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Full output
+      description: Paste the complete terminal output. Remove any private URLs or cookie values first.
+      render: shell

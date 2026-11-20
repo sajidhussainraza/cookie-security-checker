@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Contributing guide
+    url: https://github.com/sajidhussainraza/cookie-security-checker/blob/main/CONTRIBUTING.md
+    about: How to contribute, run the tests, and open a pull request.
+  - name: Security policy
+    url: https://github.com/sajidhussainraza/cookie-security-checker/blob/main/SECURITY.md
+    about: How to report a security vulnerability privately.
